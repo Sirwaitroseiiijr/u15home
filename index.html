@@ -11,87 +11,92 @@
             font-family: 'Inter', sans-serif;
             background-color: #f0f2f5;
         }
+        html, body {
+            height: 100%;
+        }
+        #page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+        main {
+            flex: 1;
+        }
         input:focus, textarea:focus {
             outline: none;
             box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.4);
         }
     </style>
 </head>
-<body class="min-h-screen flex flex-col">
-    <header class="bg-gradient-to-r from-blue-700 to-indigo-900 shadow-lg p-4">
-        <div class="container mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between">
-            <h1 class="text-white text-3xl font-bold rounded-lg mb-4 md:mb-0">Bobble Digital</h1>
-            <nav class="flex flex-wrap justify-center md:justify-end gap-3 md:gap-4">
-                <a href="index.html" class="bg-blue-800 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
-                    Home
-                </a>
-                <a href="job.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
-                    Jobs
-                </a>
-                <a href="application.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
-                    Applications
-                </a>
-                <a href="employee.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
-                    Employee Profiles
-                </a>
-                <a href="courses.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
-                    Courses
-                </a>
-            </nav>
-        </div>
-    </header>
-    <main class="container mx-auto max-w-7xl p-6 flex-grow">
-        <div class="flex flex-col md:flex-row gap-8">
-            <aside class="w-full md:w-1/4 lg:w-1/5 order-2 md:order-1">
-                <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 h-full">
-                    <h3 class="font-semibold text-gray-500 text-sm mb-4 text-center uppercase tracking-wider">Personalised Ads</h3>
-                    <div class="bg-gray-100 rounded-lg p-6 mb-4 text-center aspect-square flex items-center justify-center">
-                        <p class="text-gray-400">Ad Space</p>
+<body>
+    <div id="page-container">
+        <header class="bg-gradient-to-r from-blue-700 to-indigo-900 shadow-lg p-4">
+            <div class="container mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between">
+                <h1 class="text-white text-3xl font-bold rounded-lg mb-4 md:mb-0">Bobble Digital</h1>
+                <nav class="flex flex-wrap justify-center md:justify-end gap-3 md:gap-4">
+                    <a href="index.html" class="bg-blue-800 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
+                        Home
+                    </a>
+                    <a href="job.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
+                        Jobs
+                    </a>
+                    <a href="application.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
+                        Applications
+                    </a>
+                    <a href="employee.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
+                        Employee Profiles
+                    </a>
+                    <a href="courses.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 whitespace-nowrap">
+                        Courses
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main class="container mx-auto max-w-7xl p-6">
+            <div class="flex flex-col md:flex-row gap-8">
+                <aside class="w-full md:w-1/4 lg:w-1/5 order-2 md:order-1">
+                    <div class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 h-full">
+                        <h3 class="font-semibold text-gray-500 text-sm mb-4 text-center uppercase tracking-wider">Personalised Ads</h3>
+                        <div class="bg-gray-100 rounded-lg p-6 mb-4 text-center aspect-square flex items-center justify-center">
+                            <p class="text-gray-400">Ad Space</p>
+                        </div>
+                        <div class="bg-gray-100 rounded-lg p-6 text-center aspect-square flex items-center justify-center">
+                            <p class="text-gray-400">Ad Space</p>
+                        </div>
                     </div>
-                    <div class="bg-gray-100 rounded-lg p-6 text-center aspect-square flex items-center justify-center">
-                        <p class="text-gray-400">Ad Space</p>
+                </aside>
+                <section class="w-full md:w-3/4 lg:w-4/5 order-1 md:order-2">
+                    <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-200">
+                        <h1 class="text-4xl font-bold text-gray-800 mb-8 rounded-lg">Welcome to Bobble Digital</h1>
+                        <p class="text-blue-600 font-semibold text-lg mb-6">Your partner in navigating the digital future.</p>
+                        <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                            <p>
+                                At Bobble Digital, we are a dynamic and innovative team dedicated to providing cutting-edge solutions in the digital space. We believe in the power of technology to transform businesses and are committed to helping our clients achieve their goals through expert guidance, comprehensive training courses, and connecting top talent with exciting opportunities.
+                            </p>
+                            <p>
+                                Our mission is to build a vibrant community where professionals can grow, learn, and succeed. Whether you're a company looking to hire the best in the industry, or an individual seeking to advance your career through new skills and job opportunities, Bobble Digital is your trusted platform.
+                            </p>
+                            <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">What We Offer</h3>
+                            <ul>
+                                <li><strong>Job Board:</strong> A curated list of the best tech and digital marketing jobs.</li>
+                                <li><strong>Professional Courses:</strong> Upskill with our industry-led training programs.</li>
+                                <li><strong>Company Insights:</strong> Learn about the companies you're applying to through detailed profiles.</li>
+                            </ul>
+                            <p>
+                                Explore our site to find out more about how we can help you thrive in the digital ecosystem.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </aside>
-            <section class="w-full md:w-3/4 lg:w-4/5 order-1 md:order-2">
-                <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-200">
-                    <h1 class="text-4xl font-bold text-gray-800 mb-8 rounded-lg">Welcome to Bobble Digital</h1>
-                    <p class="text-blue-600 font-semibold text-lg mb-6">Your partner in navigating the digital future.</p>
-                    <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                        <p>
-                            At Bobble Digital, we are a dynamic and innovative team dedicated to providing cutting-edge solutions in the digital space. We believe in the power of technology to transform businesses and are committed to helping our clients achieve their goals through expert guidance, comprehensive training courses, and connecting top talent with exciting opportunities.
-                        </p>
-                        <p>
-                            Our mission is to build a vibrant community where professionals can grow, learn, and succeed. Whether you're a company looking to hire the best in the industry, or an individual seeking to advance your career through new skills and job opportunities, Bobble Digital is your trusted platform.
-                        </p>
-                        <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-3">What We Offer</h3>
-                        <ul>
-                            <li><strong>Job Board:</strong> A curated list of the best tech and digital marketing jobs.</li>
-                            <li><strong>Professional Courses:</strong> Upskill with our industry-led training programs.</li>
-                            <li><strong>Company Insights:</strong> Learn about the companies you're applying to through detailed profiles.</li>
-                        </ul>
-                        <p>
-                            Explore our site to find out more about how we can help you thrive in the digital ecosystem.
-                        </p>
-                    </div>
-                    </div>
-            </section>
-        </div>
-    </main>
-    <footer class="bg-gray-800 text-white p-4 text-center mt-8 rounded-t-lg">
-        <div class="container mx-auto max-w-7xl">
-            <p>&copy; 2025 Bobble Digital. All rights reserved.</p>
-        </div>
-    </footer>
+                </section>
+            </div>
+        </main>
+        <footer class="bg-gray-800 text-white p-4 text-center mt-8 rounded-t-lg">
+            <div class="container mx-auto max-w-7xl">
+                <p>&copy; 2025 Bobble Digital. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
     <script>
-        // JavaScript to toggle the mobile menu
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if (menuButton) {
-            menuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
     </script>
 </body>
 </html>
